@@ -1,0 +1,41 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 100%; */
+    height: 100vh;
+}
+
+.btn{
+    background-color: orangered;
+    color: aliceblue;
+    border: 2px solid white;
+    padding: 1rem 2rem;
+    font-size: large;
+    font-weight: 700;
+    border-radius: .6rem;
+    animation: animate 18s linear infinite;
+}
+.btn:hover{
+    background-color: rgb(221, 62, 4);
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+        
+    }
+}
